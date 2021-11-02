@@ -49,4 +49,59 @@ header .header-menu ul li a {
   text-decoration: none;
   padding: 1.2rem 2rem;
 }
+
+.cart-side-nav-bar {
+  width: 0px;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.cart-side-nav-bar.open {
+  width: 250px;
+}
+
+.cart-side-nav-bar.close {
+  width: 0px;
+}
+
+.cart-side-nav-bar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cart-side-nav-bar a:hover {
+  color: #f1f1f1;
+}
+
+.cart-side-nav-bar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .cart-side-nav-bar .cart-side-nav-bar {
+    padding-top: 15px;
+    border: 2px solid red;
+  }
+  .cart-side-nav-bar .cart-side-nav-bar a {
+    font-size: 18px;
+    border: 2px solid red;
+  }
+}
 /*# sourceMappingURL=main.css.map */
