@@ -104,4 +104,22 @@ header .header-menu ul li a {
     border: 2px solid red;
   }
 }
+
+.banner-section {
+  height: 600px;
+  width: 100%;
+}
+
+.set-bg {
+  background-image: url("../assets/images/banner-1.jpg");
+  height: 600px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.slider-section {
+  height: 600px;
+  width: 100%;
+}
 /*# sourceMappingURL=main.css.map */
