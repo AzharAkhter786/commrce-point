@@ -1,14 +1,44 @@
+@import "./abstracts/variables";
+
+
+body {
+	font-family: $font-secondary;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.7;
+	color: #828282;
+	background: $brand-white;
+}
+
+
+h1, h2, h3, h4, h5, h6, figure {
+	color: $brand-black;
+	font-family: $font-primary;
+	font-weight: 400;
+	margin: 0 0 20px 0;
+}
+::-webkit-selection {
+  color: $brand-white;
+  background: $brand-primary;
+}
+
+::-moz-selection {
+  color: $brand-white;
+  background: $brand-primary;
+}
+::selection {
+  color: $brand-white;
+  background: $brand-primary;
+}
+
 // header menu
-
-$gradient-start :#ed6ea0;
-$gradient-end :#ec8c69;
-
-
 //header section
 header{
     width: 100%;
     background-color: #ffffff;
-    box-shadow: 0 3px 6px 2px rgba(0, 0 , 0 , 15%);
+    position: fixed;
+    top: 0;
+    z-index: 99;
     height: 70px;
 
     .header-logo,.header-social-links{
@@ -54,10 +84,7 @@ header{
         
        }
 }
-
-
 // saide navigation
-
 .cart-side-nav-bar{
     &.open{
         width: 250px;
@@ -105,6 +132,32 @@ header{
       }
 }
 
+// over with background
+.overlay {
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+
+
+// slider section
+.slider-section{
+    background-image: url("../assets/images/img_bg_2.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+}
+
+
+
 
 // banner 
 .banner-section {
@@ -113,6 +166,7 @@ header{
 
 }
 
+// set bg
 .set-bg{
     background-image: url("../assets/images/banner-1.jpg");
     height: 600px;
@@ -123,9 +177,4 @@ header{
 }
 
 
-// slider section
-.slider-section{
-    height: 600px;
-    width: 100%;
-}
 
