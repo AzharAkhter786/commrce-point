@@ -8,6 +8,9 @@ import {Heading} from './components/Heading';
 import {Banner} from './components/Banner';
 import {Footer} from './components/Footer';
 import {NewsLetter} from './components/NewsLetter';
+import {Counter} from './components/Counter';
+import {HappyClient} from './components/HappyClient';
+
 function App() {
 
   return (
@@ -18,6 +21,8 @@ function App() {
     <Gallery/>
     <Heading/>
     <Banner/>
+    <HappyClient/>
+    <Counter/>
     <NewsLetter/>
     <Footer/>
    </>
