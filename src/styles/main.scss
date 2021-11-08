@@ -1,9 +1,11 @@
 @import "./abstracts/variables";
-
-
+@import "./base/_fonts.scss";
+$font-primary: 'Oswald', Arial, sans-serif;
+$font-weight-heading:400;
+$font-weight-paragraph:200;
 body {
-	font-family: $font-secondary;
-	font-weight: 400;
+	font-family:  $font-primary;
+	font-weight: $font-weight-heading;
 	font-size: 16px;
 	line-height: 1.7;
 	color: #828282;
@@ -14,8 +16,17 @@ body {
 h1, h2, h3, h4, h5, h6, figure {
 	color: $brand-black;
 	font-family: $font-primary;
-	font-weight: 400;
+	font-weight:$font-weight-heading;
 	margin: 0 0 20px 0;
+}
+p{
+    font-family: $font-primary;
+    font-weight:$font-weight-paragraph;
+}
+
+.heading-introduction-default{
+    margin: 6rem 0rem 6rem 0rem;
+    
 }
 ::-webkit-selection {
   color: $brand-white;
@@ -30,6 +41,27 @@ h1, h2, h3, h4, h5, h6, figure {
   color: $brand-white;
   background: $brand-primary;
 }
+.primary-btn{
+    background: transparent;
+    outline: none;
+    border: 2px solid  $brand-primary;
+    padding: 0.7rem 1.9rem;
+    &:hover{
+        background: $brand-primary;
+        a{
+            color:$brand-white;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: $brand-primary;
+        font-size: 1.2rem;
+    }
+}
+// buttons
+
+
+
 
 // header menu
 //header section
@@ -155,16 +187,39 @@ header{
     width: 100%;
     .slider-content{
         position: absolute;
-        border: 2px solid red;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        .card-show{
+            background: rgba(255,255,255,0.9);
+            padding: 40px;
+        }
     }
 
 }
 
-
-
+// country-section
+.country-section{
+    background-image: url("../assets/images/img_bg_5.jpg");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    .slider-content{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .card-show{
+            background: rgba(255,255,255,0.9);
+            padding: 40px;
+            text-align: center;
+        }
+    }
+}
 
 // banner 
 .banner-section {
@@ -190,5 +245,43 @@ header{
 
 }
 
+// happy client section
+.happy-client-section{
+    background: $brand-gray;
+    padding-bottom: 7rem;
+    text-align: center;
+    .slider-content{
+        margin-top: -1rem;
+        figure{
+             img{
+                 width: 100px;
+                 
+                 clip-path: circle();
 
 
+             }
+        }
+        blockquote{
+            p{
+                width: 50%;
+               margin: auto;
+               line-height: 2rem;
+               font-size: 1.2rem;
+
+            }
+        }
+
+    }
+}
+// newletter
+.new-letter-section{
+background:  $brand-primary;
+padding-bottom: 7rem;
+
+}
+
+.footer-section{
+    padding: 7rem 0rem;
+    background: $brand-gray;
+    
+}
