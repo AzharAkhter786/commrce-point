@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Heading=()=>{
     return(
-        <section>
+        <section className="heading-introduction-default">
             <div className="container">
                 <div className="row">
                     <div className="col-12">

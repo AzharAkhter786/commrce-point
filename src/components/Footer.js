@@ -54,7 +54,9 @@ export const  Footer=()=>{
                 <div className="row">
                     <div className="col-12">
                         <div className="copy-right text-center">
-                        Copyright ©2021 All rights reserved | This template is made with  by Azhar Akhter
+                        <p>© 2018 Free companyName. All Rights Reserved.</p>
+                        <p>Designed by storkCode.com </p>
+                        <p><span><i>icon1</i></span><span><i>icon1</i></span><span><i>icon1</i></span><span><i>icon1</i></span></p>
                         </div>
                     </div>
                 </div>

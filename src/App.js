@@ -17,10 +17,8 @@ function App() {
     <>
     <Header/>
     <Slider/>
-    <Heading/>
     <Gallery/>
-    <Heading/>
-    <Banner/>
+    
     <HappyClient/>
     <Counter/>
     <NewsLetter/>
