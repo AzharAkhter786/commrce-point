@@ -6,9 +6,10 @@ $font-weight-paragraph:200;
 body {
 	font-family:  $font-primary;
 	font-weight: $font-weight-heading;
-	font-size: 16px;
+	font-size: 17px;
 	line-height: 1.7;
 	color: #828282;
+    letter-spacing: 0.02em;
 	background: $brand-white;
 }
 
@@ -22,6 +23,7 @@ h1, h2, h3, h4, h5, h6, figure {
 p{
     font-family: $font-primary;
     font-weight:$font-weight-paragraph;
+    margin-bottom: 20px;
 }
 
 .heading-introduction-default{
@@ -76,6 +78,7 @@ header{
     .header-logo,.header-social-links{
         padding: 1.3rem;
         
+        
     }
     .header-menu{
         ul{
@@ -84,7 +87,7 @@ header{
             li{
                 display: inline-block;
                 list-style: none;
-                margin: 0rem 1rem;
+                margin: 0rem 0.4rem;
                 .dropdown-content{
                     display: none;
                     position: absolute;
@@ -278,10 +281,38 @@ header{
 background:  $brand-primary;
 padding-bottom: 7rem;
 
+
 }
 
+// footer section
 .footer-section{
     padding: 7rem 0rem;
     background: $brand-gray;
     
+}
+
+
+// services section
+.services{
+    background: $brand-gray;
+   
+
+}
+
+
+.wrap-Center-Content{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    .wrap-Center-Content-child{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+
+.product-section{
+    padding-bottom: 7rem;
 }

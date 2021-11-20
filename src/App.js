@@ -3,9 +3,8 @@ import './styles/main.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Header} from './components/Header';
 import {Slider} from './components/Slider';
-import {Gallery} from './components/Gallery';
-import {Heading} from './components/Heading';
-import {Banner} from './components/Banner';
+import {Services} from './components/Services';
+import {Products} from './components/Products';
 import {Footer} from './components/Footer';
 import {NewsLetter} from './components/NewsLetter';
 import {Counter} from './components/Counter';
@@ -17,9 +16,11 @@ function App() {
     <>
     <Header/>
     <Slider/>
-    <Gallery/>
-    
+    <Services/>
+    <Products/>
     <HappyClient/>
+    <Products/>
+    
     <Counter/>
     <NewsLetter/>
     <Footer/>
