@@ -1,1 +1,3 @@
-// export {HomeContainer as default} from "./HomeContainer";
+import  HomePage from './HomeContainer';
+
+export {HomePage} ;
