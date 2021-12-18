@@ -303,4 +303,62 @@ header .header-menu ul li a {
 .product-section {
   padding-bottom: 7rem;
 }
+
+.footer-section h6 {
+  padding-left: 2rem;
+}
+
+.footer-section ul li {
+  list-style: none;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-section .footer-company-info p {
+  padding-left: 2rem;
+  text-align: justify;
+}
+
+.footer-section .footer-company-info span {
+  padding-left: 2rem;
+}
+
+.footer-section .footer-company-info p {
+  margin-top: 1rem;
+}
+
+.footer-section .copy-right p span {
+  padding: 0.5rem;
+}
+
+@media (max-width: 575.98px) {
+  .footer-section {
+    padding: 4rem 0rem;
+  }
+  .footer-section .footer-company-info p {
+    padding: 1rem;
+    text-align: justify;
+    margin-top: 0rem;
+  }
+  .footer-section .footer-company-info span {
+    position: relative;
+    left: 25%;
+    padding: 0rem;
+    margin: 0.5rem;
+    margin-top: -1rem;
+  }
+  .footer-section h6 {
+    margin-top: 2rem;
+    padding: none;
+    text-align: center;
+  }
+  .footer-section ul li {
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=main.css.map */

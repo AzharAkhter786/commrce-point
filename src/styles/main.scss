@@ -1,5 +1,6 @@
 @import "./abstracts/variables";
 @import "./base/_fonts.scss";
+@import "./abstracts/mixins";
 $font-primary: 'Oswald', Arial, sans-serif;
 $font-weight-heading:400;
 $font-weight-paragraph:200;
@@ -287,6 +288,7 @@ padding-bottom: 7rem;
 // footer section
 .footer-section{
     padding: 7rem 0rem;
+
     background: $brand-gray;
     
 }
@@ -315,4 +317,81 @@ padding-bottom: 7rem;
 
 .product-section{
     padding-bottom: 7rem;
+}
+
+// footer section
+.footer-section{
+    h6{
+        
+        padding-left: 2rem;
+    }
+  ul{
+      li{
+          list-style: none;
+          text-align: left;
+          margin-top: 1rem;
+         
+          a{
+              text-decoration: none;
+              color: #000;
+          }
+      }
+  }
+  .footer-company-info{
+    p{
+        padding-left: 2rem;
+        text-align: justify;
+    }
+    span{
+       padding-left: 2rem;
+    }
+  
+    p{
+        margin-top: 1rem;
+    }
+
+    
+  }
+  .copy-right{
+               
+    p{
+
+        span{
+            padding: 0.5rem;
+        }
+
+    }
+}
+
+
+@include respond-to('small'){
+ padding: 4rem 0rem;
+ .footer-company-info{
+     p{
+         padding: 1rem;
+         text-align: justify;
+         margin-top: 0rem;
+     }
+     span{
+        position: relative;
+        left: 25%;
+        padding: 0rem;
+        margin: 0.5rem;
+        margin-top: -1rem;
+     }
+     
+ }
+ h6{
+     margin-top: 2rem;
+     padding: none;
+     text-align: center;
+ } 
+ ul{
+     li{
+         text-align: center;
+     }
+ }
+}
+
+
 }

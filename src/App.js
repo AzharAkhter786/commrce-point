@@ -14,13 +14,13 @@ function App() {
 
   return (
     <>
-    <Header/>
+    {/* <Header/>
+     */}
     <Slider/>
     <Services/>
     <Products/>
     <HappyClient/>
-    <Products/>
-    
+    <Products/>    
     <Counter/>
     <NewsLetter/>
     <Footer/>
