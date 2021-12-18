@@ -1,13 +1,24 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import {Slider} from '../../components/Slider';
+import {Services} from '../../components/Services';
+import {Products} from '../../components/Products';
+import {NewsLetter} from '../../components/NewsLetter';
+import {Counter} from '../../components/Counter';
+import {HappyClient} from '../../components/HappyClient';
 
 
 const HomeView = props => {
 
     return (
-        <div>
-            <h1>Home Page</h1>
-        </div>
+        <>
+     <Slider/>
+    <Services/>
+    <Products/>
+    <HappyClient/>
+    <Products/>    
+    <Counter/>
+    <NewsLetter/>        
+        </>
     )
 }
 

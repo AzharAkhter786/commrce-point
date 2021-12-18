@@ -3,7 +3,7 @@ import logoImg from '../assets/images/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faHome } from '@fortawesome/free-solid-svg-icons';
 import ReactTooltip from 'react-tooltip';
-
+import { Link } from 'react-router-dom';
 
 export const Header=()=>{
  return(
@@ -19,17 +19,12 @@ export const Header=()=>{
         <div className="col-md-8">
           <div className="header-menu">
                <ul>
-                 <li><a href="#home">Home</a></li>
-                 <li><a href="#news">pages</a></li>
-                 <li className="dropdown"><a href="#home">categoires</a>
-                   <div className="dropdown-content">
-                     <a href="#home">Link 1</a>
-                     <a href="#home">Link 2</a>
-                     <a href="#home">Link 3</a>
-                   </div>
-                 </li>
-                 <li><a href="#news">about</a></li>
-                 <li><a href="#news">Contact</a></li>
+                 <li><Link to="/">Home</Link></li>
+                 <li><Link to="about">About Us</Link></li>
+                 <li><Link to="shop" >Shops</Link></li>
+                 <li><Link to={`/product/${1}`} key={1} >Product-detail</Link></li>
+                 
+                 <li><Link to="login">Login</Link></li>
                  
                </ul>
           </div>
