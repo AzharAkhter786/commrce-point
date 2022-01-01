@@ -29,8 +29,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "commrce-point"
     ]
   },
   "browserslist": {
@@ -45,8 +44,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "eslint": "^8.5.0",
-    "eslint-plugin-react": "^7.27.1"
-  }
+  "devDependencies": {}
 }
