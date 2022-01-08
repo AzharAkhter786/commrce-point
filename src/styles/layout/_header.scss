@@ -1,0 +1,67 @@
+header{
+    background: black;
+    padding: 0.4rem;      
+    @include respond-to('medium'){
+      
+    }
+    .top-navbar-brand{
+        
+        svg{
+          width: 50%;
+          height: auto;
+              
+        }
+        a{
+            font-size: 24px;
+            
+        }
+        
+    }
+    .top-navbar-links{
+        display: block;
+        @include respond-to('medium'){
+            display: none;
+          }
+    }
+    .top-navbar-icons{
+        display: none;
+        a{
+            font-size: 28px;
+        }
+        
+        
+        @include respond-to('medium'){
+            display: block;
+          }       
+    }
+    
+}
+
+.bottom-navbar{
+    background: black;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+    width: 100%;
+    display: none;
+    @include respond-to('medium'){
+        display: block;
+      }  
+      .bottom-icons{          
+          width: 100%;
+          text-align: center;
+          span{
+              text-transform: uppercase;
+          }
+          
+          a{
+              text-align: center;
+              text-decoration: none;
+              color: white;
+              font-size: 18px;
+          }
+      }
+      
+}
+
+

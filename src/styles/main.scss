@@ -1,185 +1,19 @@
 @import "./abstracts/variables";
-@import "./base/_fonts.scss";
+@import "./base/fonts";
 @import "./abstracts/mixins";
-$font-primary: 'Oswald', Arial, sans-serif;
-$font-weight-heading:400;
-$font-weight-paragraph:200;
-body {
-	font-family:  $font-primary;
-	font-weight: $font-weight-heading;
-	font-size: 17px;
-	line-height: 1.7;
-	color: #828282;
-    letter-spacing: 0.02em;
-	background: $brand-white;
+@import "./abstracts/functions";
+@import "./base/base";
+@import "./base/helpers";
+@import "./base/typography";
+@import "./layout/header";
+
+.float-child-1,.float-child-2 {
+    float: right; 
+} 
+
+.top-navbar-links{
+    display: none;
 }
-
-
-h1, h2, h3, h4, h5, h6, figure {
-	color: $brand-black;
-	font-family: $font-primary;
-	font-weight:$font-weight-heading;
-	margin: 0 0 20px 0;
-}
-p{
-    font-family: $font-primary;
-    font-weight:$font-weight-paragraph;
-    margin-bottom: 20px;
-}
-
-.heading-introduction-default{
-    margin: 6rem 0rem 6rem 0rem;
-    
-}
-::-webkit-selection {
-  color: $brand-white;
-  background: $brand-primary;
-}
-
-::-moz-selection {
-  color: $brand-white;
-  background: $brand-primary;
-}
-::selection {
-  color: $brand-white;
-  background: $brand-primary;
-}
-.primary-btn{
-    background: transparent;
-    outline: none;
-    border: 2px solid  $brand-primary;
-    padding: 0.7rem 1.9rem;
-    &:hover{
-        background: $brand-primary;
-        a{
-            color:$brand-white;
-        }
-    }
-    a{
-        text-decoration: none;
-        color: $brand-primary;
-        font-size: 1.2rem;
-    }
-}
-// buttons
-
-
-
-
-// header menu
-//header section
-header{
-    width: 100%;
-    background-color: #ffffff;
-    position: fixed;
-    top: 0;
-    z-index: 99;
-    height: 70px;
-
-    .header-logo,.header-social-links{
-        padding: 1.3rem;
-        
-        
-    }
-    .header-menu{
-        ul{
-            padding: 1.3rem;
-            text-align: center;
-            li{
-                display: inline-block;
-                list-style: none;
-                margin: 0rem 0.4rem;
-                .dropdown-content{
-                    display: none;
-                    position: absolute;
-                    top: 140%;
-                    display: none;
-                    min-width: 180PX;
-                    background-color: #f9f9f9;
-                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                    z-index: 1;
-                    a{
-                        color: black;
-                        padding: 12px 16px;
-                        text-decoration: none;
-                        display: block;
-                     
-                        text-align: left;
-                    }
-                }
-                
-               &.dropdown:hover  .dropdown-content{
-                    display: block;
-                }
-                a{
-                    text-decoration: none;    
-                    padding: 1.2rem 2rem;
-                }
-            }
-        }
-        
-       }
-}
-// saide navigation
-.cart-side-nav-bar{
-    &.open{
-        width: 250px;
-    }
-    &.close{
-        width: 0px;
-    }
-    width: 0px;
-    height: 100vh;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color:  #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    a{
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-        &:hover{
-            color: #f1f1f1;
-        }
-    }
-    .closebtn{
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
-
-    @media screen and (max-height: 450px) {
-        .cart-side-nav-bar {padding-top: 15px;
-            border: 2px solid red;
-        a{
-            font-size: 18px;
-            border: 2px solid red;
-        }
-        }
-      }
-}
-
-// over with background
-.overlay {
-    z-index: 0;
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.2);
-}
-
-
 
 // slider section
 .slider-section{
@@ -239,15 +73,6 @@ header{
 
 }
 
-// set bg
-.set-bg{
-    background-image: url("../assets/images/banner-1.jpg");
-    height: 600px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-
-}
 
 // happy client section
 .happy-client-section{
@@ -285,13 +110,6 @@ padding-bottom: 7rem;
 
 }
 
-// footer section
-.footer-section{
-    padding: 7rem 0rem;
-
-    background: $brand-gray;
-    
-}
 
 
 // services section
@@ -319,79 +137,3 @@ padding-bottom: 7rem;
     padding-bottom: 7rem;
 }
 
-// footer section
-.footer-section{
-    h6{
-        
-        padding-left: 2rem;
-    }
-  ul{
-      li{
-          list-style: none;
-          text-align: left;
-          margin-top: 1rem;
-         
-          a{
-              text-decoration: none;
-              color: #000;
-          }
-      }
-  }
-  .footer-company-info{
-    p{
-        padding-left: 2rem;
-        text-align: justify;
-    }
-    span{
-       padding-left: 2rem;
-    }
-  
-    p{
-        margin-top: 1rem;
-    }
-
-    
-  }
-  .copy-right{
-               
-    p{
-
-        span{
-            padding: 0.5rem;
-        }
-
-    }
-}
-
-
-@include respond-to('small'){
- padding: 4rem 0rem;
- .footer-company-info{
-     p{
-         padding: 1rem;
-         text-align: justify;
-         margin-top: 0rem;
-     }
-     span{
-        position: relative;
-        left: 25%;
-        padding: 0rem;
-        margin: 0.5rem;
-        margin-top: -1rem;
-     }
-     
- }
- h6{
-     margin-top: 2rem;
-     padding: none;
-     text-align: center;
- } 
- ul{
-     li{
-         text-align: center;
-     }
- }
-}
-
-
-}

@@ -1,0 +1,77 @@
+body {
+	font-family:  $font-primary;
+	font-weight: $font-weight-heading;
+	font-size: 17px;
+	line-height: 1.7;
+	color: #828282;
+    letter-spacing: 0.02em;
+	background: $brand-white;
+}
+
+
+h1, h2, h3, h4, h5, h6, figure {
+	color: $brand-black;
+	font-family: $font-primary;
+	font-weight:$font-weight-heading;
+	margin: 0 0 20px 0;
+}
+p{
+    font-family: $font-primary;
+    font-weight:$font-weight-paragraph;
+    margin-bottom: 20px;
+}
+
+.heading-introduction-default{
+    margin: 6rem 0rem 6rem 0rem;
+    
+}
+::-webkit-selection {
+  color: $brand-white;
+  background: $brand-primary;
+}
+
+::-moz-selection {
+  color: $brand-white;
+  background: $brand-primary;
+}
+::selection {
+  color: $brand-white;
+  background: $brand-primary;
+}
+.primary-btn{
+    background: transparent;
+    outline: none;
+    border: 2px solid  $brand-primary;
+    padding: 0.7rem 1.9rem;
+    &:hover{
+        background: $brand-primary;
+        a{
+            color:$brand-white;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: $brand-primary;
+        font-size: 1.2rem;
+    }
+}
+
+.overlay {
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+
+.set-bg{
+    background-image: url("../assets/images/banner-1.jpg");
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}

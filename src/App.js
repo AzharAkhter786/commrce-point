@@ -2,6 +2,8 @@ import React from 'react';
 import './styles/main.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Header} from './components/Header';
+import {BottomNavBar} from './components/BottomNavBar';
+
 import {RoutesTree} from './components/RoutesTree';
 import {Footer} from './components/Footer';
 
@@ -10,8 +12,10 @@ function App() {
   return (
     <>
     <Header/>
-    <RoutesTree/>
+    <BottomNavBar/>
+    {/* <RoutesTree/>
     <Footer/>
+     */}
    </>
   );
 }
