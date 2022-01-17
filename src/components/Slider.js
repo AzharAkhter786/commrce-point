@@ -1,18 +1,25 @@
 import React from 'react'
+import Shoes from '../assets/images/Shoes1.png'
+import Text from '../assets/images/text.png'
 
 export const Slider=()=>{
     return(
         <section className="slider-section">
             <div className="overlay"></div>
-           <div className="slider-content">
                <div className="container">
+           <div className="slider-content">
                    <div className="row">
-                       <div className="col-md-12">
+                       <div className="col-12 col-sm-12 col-md-12">
                            <div className="card-show">
-                               <p>price123</p>
-                               <h3>ALATO CABINET</h3>
-                               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda vel praesentium exercitationem ut quae ipsam soluta totam delectus nihil! Modi alias, placeat similique quo magni, enim porro, perspiciatis laborum doloremque officia nisi animi reprehenderit dolorum vitae eos voluptatum libero eaque!</p>
+                               <h1>STORKLEATHER</h1>
+                               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda vel praesentium </p>
                                <button className="primary-btn" ><a href="#home">Show Now</a></button>
+                               <div className='card-img'>
+                               <img src={Shoes} className='shoesImg' alt="shoes" />
+        
+                               
+                               </div>
+                               
                            </div>
                        </div>
                    </div>

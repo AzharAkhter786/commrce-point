@@ -1,6 +1,7 @@
 header{
-    background: black;
-    padding: 0.4rem;      
+    background: brown;
+    padding: 0.4rem;  
+    border: 2px solid red;    
     @include respond-to('medium'){
       
     }

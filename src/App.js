@@ -3,6 +3,9 @@ import './styles/main.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Header} from './components/Header';
 import {BottomNavBar} from './components/BottomNavBar';
+import {Slider} from './components/Slider';
+import {Categories} from './components/Categories';
+
 
 import {RoutesTree} from './components/RoutesTree';
 import {Footer} from './components/Footer';
@@ -12,6 +15,8 @@ function App() {
   return (
     <>
     <Header/>
+    <Slider/>
+    <Categories/>
     <BottomNavBar/>
     {/* <RoutesTree/>
     <Footer/>
