@@ -15,9 +15,9 @@ function App() {
   return (
     <>
     <Header/>
-    <Slider/>
+    {/* <Slider/>
     <Categories/>
-    <BottomNavBar/>
+    <BottomNavBar/> */}
     {/* <RoutesTree/>
     <Footer/>
      */}

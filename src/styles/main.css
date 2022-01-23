@@ -346,3 +346,8 @@ header .top-navbar-icons a {
   padding-bottom: 7rem;
 }
 /*# sourceMappingURL=main.css.map */
+.section{
+  border: 2px solid red;
+  height: 600px;
+  margin: 2rem;
+}

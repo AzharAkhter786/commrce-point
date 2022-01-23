@@ -43,7 +43,37 @@ export const Header=()=>{
   };
  return(
     <>
-    <header className="top-navbar">
+    <section>
+      <div className="section">
+        <p>Lorem, ipsum.</p>
+      </div>
+    </section>
+    <section>
+      <div className="section">
+        <p>Ullam, repellat?</p>
+      </div>
+    </section>
+    <section>
+      <div className="section">
+        <p>Tempore, magnam.</p>
+      </div>
+    </section>
+    <section>
+      <div className="section">
+        <p>Dolorum, illum.</p>
+      </div>
+    </section>
+    <section>
+      <div className="section">
+        <p>Inventore, reprehenderit!</p>
+      </div>
+    </section>
+    <section>
+      <div className="section">
+        <p>Cum, mollitia.</p>
+      </div>
+    </section>
+    {/* <header className="top-navbar">
      <div className="container">
      <div className="row">
         <div className="col-6 col-sm-6 col-md-6">
@@ -72,7 +102,7 @@ export const Header=()=>{
         </div>
       </div>
        </div>  
-    </header>
+    </header> */}
     {/* <div className="container">
     <div className="row">
     <div className="col-12 col-md-12">
